@@ -40,6 +40,14 @@ pip install thermoencoder
 Check the [examples](http://github.com/kmedian/thermoencoder/examples) folder for notebooks.
 
 
+```
+X = [[0, 0], [1, 1], [3, 5]]  # two ordinal features with 3 samples
+from thermoencoder import ThermoEncoder
+enc = ThermoEncoder()
+Z = enc.fit_transform(X)  # encode
+X_back = enc.inverse_transform(Z)  # decode
+```
+
 
 ## Commands
 * Check syntax: `flake8 --ignore=F401`
