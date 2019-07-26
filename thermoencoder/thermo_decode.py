@@ -5,7 +5,7 @@ def thermo_decode_max(Xin, copy=True):
     # copy input
     X = np.array(Xin, copy=copy)
     # assume a single vector to be 1 sample
-    if len(X.shape) is 1:
+    if len(X.shape) == 1:
         X = np.array([X])
     # Assume int labels to range from 0 to M
     # wheras M the number of columns

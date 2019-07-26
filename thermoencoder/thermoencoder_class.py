@@ -28,7 +28,7 @@ class ThermoEncoder(BaseEstimator, TransformerMixin):
         if not hasattr(X, "shape"):
             X = np.array(X)
         # encode
-        if self.n_features is 1:
+        if self.n_features == 1:
             return thermo_encode_8(X)[:, :self.n_labels[0]]
         else:
             Z = []
