@@ -3,22 +3,6 @@
 
 # thermoencoder
 
-## DELETE THIS LATER 
-Download thermoencoder and rename it
-
-```
-git clone git@github.com:kmedian/thermoencoder.git mycoolpkg
-cd mycoolpkg
-bash rename.sh "kmedian" "mycoolpkg" "Real Name"
-```
-
-The git repo is reinitialized without an remote url. 
-Therefore
-
-```
-git remote add origin git@github.com:kmedian/mycoolpkg.git
-```
-
 
 ## Table of Contents
 * [Installation](#installation)
