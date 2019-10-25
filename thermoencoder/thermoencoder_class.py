@@ -8,7 +8,7 @@ class ThermoEncoder(BaseEstimator, TransformerMixin):
     def __init__(self):
         pass
 
-    def fit(self, X, y=None):
+    def fit(self, X: np.ndarray, y=None):
         # convert to numpy array
         if not hasattr(X, "shape"):
             X = np.array(X)
@@ -23,7 +23,7 @@ class ThermoEncoder(BaseEstimator, TransformerMixin):
             self.n_labels = [np.max(X)]
         return self
 
-    def transform(self, X):
+    def transform(self, X: np.ndarray) -> np.ndarray:
         # convert to numpy array
         if not hasattr(X, "shape"):
             X = np.array(X)
@@ -36,7 +36,7 @@ class ThermoEncoder(BaseEstimator, TransformerMixin):
                 Z.append(thermo_encode_8(X[:, j])[:, :self.n_labels[j]])
             return np.hstack(Z)
 
-    def inverse_transform(self, Z):
+    def inverse_transform(self, Z: np.ndarray) -> np.ndarray:
         # convert to numpy array
         if not hasattr(Z, "shape"):
             Z = np.array(Z)

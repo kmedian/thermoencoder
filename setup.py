@@ -7,7 +7,7 @@ def read(fname):
 
 
 setup(name='thermoencoder',
-      version='0.1.1',
+      version='0.1.2',
       description='Thermometer Encoding for ordinal variables',
       long_description=read('README.md'),
       long_description_content_type='text/markdown',

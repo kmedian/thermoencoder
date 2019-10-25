@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def thermo_encode_8(arr):
+def thermo_encode_8(arr: np.ndarray) -> np.ndarray:
     """Thermometer Encoding for integers labels from 0 to 8
 
     Parameters:

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def thermo_decode_max(Xin, copy=True):
+def thermo_decode_max(Xin: np.ndarray, copy: bool = True) -> np.ndarray:
     # copy input
     X = np.array(Xin, copy=copy)
     # assume a single vector to be 1 sample
