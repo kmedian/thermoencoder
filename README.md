@@ -24,7 +24,7 @@ pip install thermoencoder
 Check the [examples](http://github.com/kmedian/thermoencoder/examples) folder for notebooks.
 
 
-```
+```python
 X = [[0, 0], [1, 1], [3, 5]]  # two ordinal features with 3 samples
 from thermoencoder import ThermoEncoder
 enc = ThermoEncoder()
