@@ -1,11 +1,11 @@
 sudo: false
 language: python
 python:
-  - "3.6"
+  - "3.11"
 install:
   - pip install flake8>=3.5.0
   - pip install -r requirements.txt
 script:
   - flake8 --ignore=F401
-  - python -W ignore -m unittest discover
+  - python -W ignore -m pytest test/
 cache: pip
